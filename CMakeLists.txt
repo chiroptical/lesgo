@@ -242,7 +242,7 @@ if (CMAKE_Fortran_COMPILER_ID STREQUAL "Intel")
     #set (CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -cpp -O0 -g -traceback -no-wrap-margin -assume byterecl")
 # GNU
 else (CMAKE_Fortran_COMPILER_ID STREQUAL "Intel")
-    set (CMAKE_Fortran_FLAGS "-cpp -O2 -ffast-math -funroll-loops -fall-intrinsics -Wall -fcheck=all")
+    set (CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -cpp -O2 -ffast-math -funroll-loops -fall-intrinsics -Wall -fcheck=all")
     #set (CMAKE_Fortran_FLAGS "-cpp -O0 -g -fbacktrace -fall-intrinsics -Wall -fcheck=all")
 endif (CMAKE_Fortran_COMPILER_ID STREQUAL "Intel")
 
